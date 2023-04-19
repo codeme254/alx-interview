@@ -22,6 +22,8 @@ def pascal_row(row_num):
     3 -> 1 2 1
     """
     row = []
+    if row_num <= 0:
+        return []
     for i in range(row_num):
         if i == 0 or i == row_num-1:
             row.append(1)
